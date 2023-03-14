@@ -8,3 +8,18 @@ Tue 14 Mar 2023 05:33:56 PM UTC:
  tests:  1|6
 total_score: 10/70
 332b5b3
+Tue 14 Mar 2023 05:49:40 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:3: error: implicit declaration of function ‘cmp’; did you mean ‘bcmp’? [-Werror=implicit-function-declaration]
+   31 |   cmp(const void *elem, const void *piv);
+      |   ^~~
+      |   bcmp
+exercises.c:31:7: error: expected expression before ‘const’
+   31 |   cmp(const void *elem, const void *piv);
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c425029

@@ -26,7 +26,11 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-    
+
+
+  cmp(const void *elem, const void *piv);
+  qsort(a, n, sizeof(size_t), cmp);
+  
 }
 
 
