@@ -27,10 +27,20 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
 
-
-  cmp(const void *elem, const void *piv);
-  qsort(a, n, sizeof(size_t), cmp);
   
+
+  for(int j=0 ; j<n ; j++){
+
+      for(int i=0 ; i<n-1 ; i++){
+
+        int aux=a[i];
+        a[i]=a[i+1];
+        a[i+1] = aux;
+      
+    }
+  }
+  *min =a[0];
+  *max = a[n];
 }
 
 
