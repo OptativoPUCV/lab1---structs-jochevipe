@@ -103,3 +103,18 @@ Thu 16 Mar 2023 09:17:09 PM UTC:
  tests:  3|4
 total_score: 30/70
 bd0777a
+Thu 16 Mar 2023 09:24:58 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   90 |   Vector *a = (vector *) calloc(n,sizeof(size_t));
+      |                ^~~~~~
+      |                Vector
+exercises.c:90:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:24: error: expected expression before ‘)’ token
+   90 |   Vector *a = (vector *) calloc(n,sizeof(size_t));
+      |                        ^
+Compilation failed
+ee8c191
