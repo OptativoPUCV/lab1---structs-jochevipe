@@ -55,3 +55,17 @@ exercises.c:68:3: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 3b2a5d3
+Thu 16 Mar 2023 08:55:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:67:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   67 |   scanf("%s %s",(*p).nombre,(*p).rut);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:68:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   68 |   scanf("%i",&p->edad);
+      |   ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+43f75b2
