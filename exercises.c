@@ -89,10 +89,10 @@ Vector * crearVector(int n) {
 
 
   
-  Vector *a = (Vector *) malloc(sizeof(int));
+  Vector *a = (Vector *) malloc(n*sizeof(Vector));
   if(a == NULL) exit(EXIT_FAILURE);
 
-  int a->datos = (int *) calloc(n,sizeof(int));
+  int a->datos = (int) calloc(n,sizeof(int));
    return a;
 }
 

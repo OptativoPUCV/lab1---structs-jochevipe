@@ -147,3 +147,18 @@ exercises.c:95:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__a
 exercises.c:95:8: error: expected expression before ‘->’ token
 Compilation failed
 7007132
+Fri 17 Mar 2023 02:02:10 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:95:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   95 |   int a->datos = (int) calloc(n,sizeof(int));
+      |        ^~
+exercises.c:95:8: error: expected expression before ‘->’ token
+exercises.c:95:18: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   95 |   int a->datos = (int) calloc(n,sizeof(int));
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+fb2db4d
