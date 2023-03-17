@@ -162,3 +162,14 @@ exercises.c:95:18: error: cast from pointer to integer of different size [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 fb2db4d
+Fri 17 Mar 2023 02:02:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:95:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   95 |   int a->datos = (int*) calloc(n,sizeof(int));
+      |        ^~
+exercises.c:95:8: error: expected expression before ‘->’ token
+Compilation failed
+353b45f
